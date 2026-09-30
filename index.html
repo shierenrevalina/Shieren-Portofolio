@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio pribadi — skill, proyek, dan kontak. Terbuka untuk peluang internship." />
+  <title>Shieren Revalina Jesslyn — Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar">
+        <img src="assets/Profile.png" alt="Foto profil" onerror="this.src='https://placehold.co/200x200/14b8a6/ffffff?text=Foto'" />
+      </div>
+      <h1 class="side-name">Shieren Revalina Jesslyn</h1>
+      <p class="side-role" data-id="Data Analyst · Computer Science" data-en="Data Analyst · Computer Science">Data Analyst · Computer Science</p>
+
+      <div class="side-socials">
+        <a href="https://github.com/shierenrevalina" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/shieren-revalina-129391294/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+        <a href="mailto:shieren.revalina06@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+
+    <nav class="side-nav" id="sideNav">
+      <a href="#beranda" class="active"><span class="dot"></span><span data-id="Beranda" data-en="Home">Beranda</span></a>
+      <a href="#tentang"><span class="dot"></span><span data-id="Tentang" data-en="About">Tentang</span></a>
+      <a href="#skill"><span class="dot"></span><span data-id="Skill" data-en="Skills">Skill</span></a>
+      <a href="#portfolio"><span class="dot"></span><span data-id="Portfolio" data-en="Portfolio">Portfolio</span></a>
+      <a href="#sertifikat"><span class="dot"></span><span data-id="Sertifikat" data-en="Certificates">Sertifikat</span></a>
+      <a href="#kontak"><span class="dot"></span><span data-id="Kontak" data-en="Contact">Kontak</span></a>
+    </nav>
+
+    <div class="side-bottom">
+      <a href="assets/cv.pdf" class="btn btn-primary side-cv" target="_blank" rel="noopener">
+        <span data-id="📄 Lihat CV" data-en="📄 View CV">📄 Lihat CV</span>
+      </a>
+      <div class="side-controls">
+        <button class="ctrl-btn" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">🌙</button>
+        <button class="ctrl-btn lang-btn" id="langToggle" aria-label="Ganti bahasa" title="Ganti bahasa">ID</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Tombol buka sidebar (mobile) -->
+  <button class="menu-fab" id="menuFab" aria-label="Buka menu"><span></span><span></span><span></span></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===== Konten utama ===== -->
+  <main class="main">
+    <!-- Beranda -->
+    <section class="hero" id="beranda">
+      <span class="kicker" data-id="👋 Selamat datang di portofolio saya" data-en="👋 Welcome to my portfolio">👋 Selamat datang di portofolio saya</span>
+      <h2 class="hero-title">
+        <span data-id="Halo, saya" data-en="Hi, I'm">Halo, saya</span>
+        <span class="grad">Shieren Revalina Jesslyn</span>
+      </h2>
+      <p class="hero-tagline" data-id="Exploring Technology, Creating Solutions" data-en="Exploring Technology, Creating Solutions">Exploring Technology, Creating Solutions</p>
+      <p class="hero-desc" data-id="Saya menekuni bidang data analytics — mengolah, menganalisis, dan memvisualisasikan data untuk menghasilkan insight yang mendukung pengambilan keputusan. Saya tertarik pada analisis data dengan SQL, Python, dan tools visualisasi, serta senang menemukan pola dari data yang kompleks. Saat ini saya terbuka untuk peluang internship sebagai Data Analyst." data-en="I focus on data analytics — cleaning, analyzing, and visualizing data to produce insights that support decision-making. I'm interested in data analysis with SQL, Python, and visualization tools, and I enjoy uncovering patterns from complex data. I'm currently open to internship opportunities as a Data Analyst.">Saya menekuni bidang data analytics — mengolah, menganalisis, dan memvisualisasikan data untuk menghasilkan insight yang mendukung pengambilan keputusan. Saya tertarik pada analisis data dengan SQL, Python, dan tools visualisasi, serta senang menemukan pola dari data yang kompleks. Saat ini saya terbuka untuk peluang internship sebagai Data Analyst.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary"><span data-id="Lihat Karya" data-en="View Work">Lihat Karya</span> →</a>
+        <a href="#kontak" class="btn btn-outline"><span data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</span></a>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section class="block" id="tentang">
+      <div class="block-head">
+        <span class="num">01</span>
+        <h3 data-id="Tentang Saya" data-en="About Me">Tentang Saya</h3>
+      </div>
+      <div class="about-layout">
+        <p class="about-p" data-id="Saya mahasiswa Computer Science dengan peminatan Data Analyst. Saya terbiasa mengumpulkan, membersihkan, dan menganalisis data, lalu menyajikannya dalam bentuk visualisasi dan laporan yang mudah dipahami. Saya menguasai SQL dan Python (pandas, NumPy) untuk analisis, serta terbiasa membuat dashboard menggunakan Excel, Tableau, atau Power BI. Saya berpikir analitis, teliti pada detail, dan senang menerjemahkan data menjadi rekomendasi yang berdampak bagi bisnis." data-en="I'm a Computer Science student specializing in Data Analytics. I'm experienced in collecting, cleaning, and analyzing data, then presenting it through clear visualizations and reports. I work with SQL and Python (pandas, NumPy) for analysis, and I'm comfortable building dashboards with Excel, Tableau, or Power BI. I'm analytical, detail-oriented, and enjoy translating data into recommendations that create real business impact.">Saya mahasiswa Computer Science dengan peminatan Data Analyst. Saya terbiasa mengumpulkan, membersihkan, dan menganalisis data, lalu menyajikannya dalam bentuk visualisasi dan laporan yang mudah dipahami. Saya menguasai SQL dan Python (pandas, NumPy) untuk analisis, serta terbiasa membuat dashboard menggunakan Excel, Tableau, atau Power BI. Saya berpikir analitis, teliti pada detail, dan senang menerjemahkan data menjadi rekomendasi yang berdampak bagi bisnis.</p>
+        <div class="facts">
+          <div class="fact"><strong>3+</strong><span data-id="Proyek" data-en="Projects">Proyek</span></div>
+          <div class="fact"><strong>3</strong><span data-id="Paper" data-en="Papers">Paper</span></div>
+          <div class="fact"><strong>1</strong><span data-id="Sertifikat" data-en="Certificates">Sertifikat</span></div>
+          <div class="fact"><strong>3.00</strong><span data-id="IPK / Nilai" data-en="GPA / Grade">IPK / Nilai</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="block" id="skill">
+      <div class="block-head">
+        <span class="num">02</span>
+        <h3 data-id="Skill &amp; Keahlian" data-en="Skills &amp; Expertise">Skill &amp; Keahlian</h3>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4 class="skill-group-title" data-id="Technical" data-en="Technical">Technical</h4>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">HTML/CSS</span>
+            <span class="skill-chip">Data Structures &amp; Algorithms</span>
+            <span class="skill-chip">Computer Networks</span>
+            <span class="skill-chip">AI</span>
+            <span class="skill-chip">Data Processing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title" data-id="Soft Skills" data-en="Soft Skills">Soft Skills</h4>
+          <div class="skill-chips">
+            <span class="skill-chip">Communication</span>
+            <span class="skill-chip">Teamwork</span>
+            <span class="skill-chip">Leadership</span>
+            <span class="skill-chip">Time Management</span>
+            <span class="skill-chip">Problem Solving</span>
+            <span class="skill-chip">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="block" id="portfolio">
+      <div class="block-head">
+        <span class="num">03</span>
+        <h3 data-id="Portfolio" data-en="Portfolio">Portfolio</h3>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all" data-id="Semua" data-en="All">Semua</button>
+        <button class="filter-btn" data-filter="web" data-id="Web App" data-en="Web App">Web App</button>
+        <button class="filter-btn" data-filter="research" data-id="Research Paper" data-en="Research Paper">Research Paper</button>
+        <button class="filter-btn" data-filter="other" data-id="Desain" data-en="Design">Desain</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="other">
+          <div class="project-thumb">
+            <img src="assets/project1.jpg" alt="AirVue Business" onerror="this.src='https://placehold.co/600x400/14b8a6/ffffff?text=AirVue+%E2%80%94+Figma'" />
+          </div>
+          <div class="project-body">
+            <span class="project-badge" data-id="Desain UI/UX" data-en="UI/UX Design">Desain UI/UX</span>
+            <h4>AirVue Business</h4>
+            <p data-id="Prototipe desain aplikasi bisnis di Figma — perancangan antarmuka dan alur pengguna (user flow) yang interaktif." data-en="Interactive business app design prototype in Figma — UI and user flow design.">Prototipe desain aplikasi bisnis di Figma — perancangan antarmuka dan alur pengguna (user flow) yang interaktif.</p>
+            <a href="https://www.figma.com/proto/Z81VMTBAkLbCeRomVHfGyJ/AirVue_Bisnis?page-id=0%3A1&node-id=81-1203&viewport=2286%2C52%2C0.26&t=4H246PV7hlttYQdr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=81%3A1203&show-proto-sidebar=1" class="project-link" target="_blank" rel="noopener"><span data-id="Lihat Prototipe" data-en="View Prototype">Lihat Prototipe</span> →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="assets/project2.jpg" alt="Sistem Rumah Kost" onerror="this.src='https://placehold.co/600x400/6366f1/ffffff?text=Sistem+Rumah+Kost'" />
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Web App</span>
+            <h4>Sistem Rumah Kost</h4>
+            <p data-id="Aplikasi pengelolaan rumah kost untuk mendata kamar, penghuni, dan pembayaran. Proyek kolaborasi tim yang tersedia di GitHub." data-en="A boarding house management app for handling rooms, tenants, and payments. A team collaboration project available on GitHub.">Aplikasi pengelolaan rumah kost untuk mendata kamar, penghuni, dan pembayaran. Proyek kolaborasi tim yang tersedia di GitHub.</p>
+            <a href="https://github.com/Pasya-Kemal/SistemRumahKost" class="project-link" target="_blank" rel="noopener"><span data-id="Lihat Kode" data-en="View Code">Lihat Kode</span> →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="assets/project3.jpg" alt="EcoGreen Waste Classification" onerror="this.src='https://placehold.co/600x400/0d9488/ffffff?text=EcoGreen'" />
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Web App</span>
+            <h4>EcoGreen Waste Classification</h4>
+            <p data-id="Aplikasi web klasifikasi sampah untuk membantu memilah jenis sampah secara otomatis. Sudah di-deploy dan dapat diakses online." data-en="A waste classification web app that helps automatically sort waste types. Deployed and accessible online.">Aplikasi web klasifikasi sampah untuk membantu memilah jenis sampah secara otomatis. Sudah di-deploy dan dapat diakses online.</p>
+            <a href="https://ecogreen-waste-classification-hck.netlify.app/" class="project-link" target="_blank" rel="noopener"><span data-id="Lihat Proyek" data-en="View Project">Lihat Proyek</span> →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="research">
+          <div class="project-thumb paper-thumb">
+            <div class="paper-preview">
+              <span class="paper-venue">© IEEE · Computer Science</span>
+              <h5 class="paper-mini-title">Development of Organic and Recyclable Waste Classification Application Using MobileNetV4 and YOLOv8</h5>
+              <p class="paper-snippet">Abstract — This study presents a waste classification application that integrates MobileNetV4 and YOLOv8 to classify waste into organic and recyclable categories. MobileNetV4 provides lightweight, accurate classification while YOLOv8 enables real-time detection through an intuitive interface…</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Research Paper</span>
+            <h4>Development of Organic and Recyclable Waste Classification Application Using MobileNetV4 and YOLOv8</h4>
+            <p data-id="Pengembangan aplikasi EcoGreen yang mengintegrasikan MobileNetV4 dan YOLOv8 untuk klasifikasi sampah organik & daur ulang, dilengkapi Smart Scanner, Trash Encyclopedia, Waste Map, dan EcoBadges." data-en="Development of the EcoGreen app integrating MobileNetV4 and YOLOv8 for organic & recyclable waste classification, featuring Smart Scanner, Trash Encyclopedia, Waste Map, and EcoBadges.">Pengembangan aplikasi EcoGreen yang mengintegrasikan MobileNetV4 dan YOLOv8 untuk klasifikasi sampah organik & daur ulang, dilengkapi Smart Scanner, Trash Encyclopedia, Waste Map, dan EcoBadges.</p>
+            <a href="assets/project4.pdf" class="project-link" target="_blank" rel="noopener"><span data-id="Baca Paper" data-en="Read Paper">Baca Paper</span> →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="research">
+          <div class="project-thumb paper-thumb">
+            <div class="paper-preview">
+              <span class="paper-venue">© IEEE · Bina Nusantara University</span>
+              <h5 class="paper-mini-title">Performance Analysis of Deep Learning Models in Organic and Recyclable Waste Classification</h5>
+              <p class="paper-snippet">Abstract — Five deep learning models (CNN, MobileNetV4, YOLOv8, EfficientNetB0, ResNet50) are evaluated on 21,076 waste images using accuracy, precision, recall, and F1-score. MobileNetV4 achieved the best performance with ~98% accuracy across evaluation metrics…</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Research Paper</span>
+            <h4>Performance Analysis of Deep Learning Models in Organic and Recyclable Waste Classification</h4>
+            <p data-id="Perbandingan lima model deep learning (CNN, MobileNetV4, YOLOv8, EfficientNetB0, ResNet50) untuk klasifikasi sampah pada 21.076 citra. MobileNetV4 mencapai akurasi tertinggi ~98,5%." data-en="A comparison of five deep learning models (CNN, MobileNetV4, YOLOv8, EfficientNetB0, ResNet50) for waste classification over 21,076 images. MobileNetV4 achieved the highest accuracy at ~98.5%.">Perbandingan lima model deep learning (CNN, MobileNetV4, YOLOv8, EfficientNetB0, ResNet50) untuk klasifikasi sampah pada 21.076 citra. MobileNetV4 mencapai akurasi tertinggi ~98,5%.</p>
+            <a href="assets/project5.pdf" class="project-link" target="_blank" rel="noopener"><span data-id="Baca Paper" data-en="Read Paper">Baca Paper</span> →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="research">
+          <div class="project-thumb paper-thumb">
+            <div class="paper-preview">
+              <span class="paper-venue">© IEEE · Bina Nusantara University</span>
+              <h5 class="paper-mini-title">A Hybrid Fuzzy Logic–Based Intelligent Traffic Signal Control with Optimization Mechanism</h5>
+              <p class="paper-snippet">Abstract — A smart traffic light control system using Fuzzy Logic. It uses waiting time and number of vehicles to decide the green-light duration, giving more flexible signal control than a fixed-time approach for intersection management…</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Research Paper</span>
+            <h4>A Hybrid Fuzzy Logic–Based Intelligent Traffic Signal Control with Optimization Mechanism</h4>
+            <p data-id="Sistem lampu lalu lintas pintar berbasis Fuzzy Logic yang mempertimbangkan jumlah kendaraan dan waktu tunggu untuk menentukan durasi lampu hijau secara adaptif, sebagai alternatif sistem fixed-time." data-en="A Fuzzy Logic-based smart traffic light system that considers vehicle count and waiting time to adaptively determine green-light duration, as an alternative to fixed-time systems.">Sistem lampu lalu lintas pintar berbasis Fuzzy Logic yang mempertimbangkan jumlah kendaraan dan waktu tunggu untuk menentukan durasi lampu hijau secara adaptif, sebagai alternatif sistem fixed-time.</p>
+            <a href="assets/project6.pdf" class="project-link" target="_blank" rel="noopener"><span data-id="Baca Paper" data-en="Read Paper">Baca Paper</span> →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sertifikat -->
+    <section class="block" id="sertifikat">
+      <div class="block-head">
+        <span class="num">04</span>
+        <h3 data-id="Sertifikat" data-en="Certificates">Sertifikat</h3>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <a href="assets/cjpg" target="_blank" rel="noopener" class="cert-thumb">
+            <img src="assets/cert-icoris.jpg" alt="ICORIS 2026 Participant Certificate — Shieren Revalina Jesslyn" loading="lazy" />
+          </a>
+          <span class="cert-issuer">IEEE · ICORIS 2026</span>
+          <h4>The 8th International Conference on Cybernetics and Intelligent Systems (ICORIS) — Participant</h4>
+          <p data-id="Sertifikat sebagai peserta ICORIS 2026 di Universitas Teknologi Bandung, 25–26 September 2026." data-en="Certificate as a participant of ICORIS 2026 at Universitas Teknologi Bandung, 25–26 September 2026.">Sertifikat sebagai peserta ICORIS 2026 di Universitas Teknologi Bandung, 25–26 September 2026.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="block" id="kontak">
+      <div class="block-head">
+        <span class="num">05</span>
+        <h3 data-id="Kontak" data-en="Contact">Kontak</h3>
+      </div>
+      <p class="contact-lead" data-id="Terbuka untuk kolaborasi, diskusi proyek, atau peluang magang. Yuk terhubung!" data-en="Open for collaboration, project discussions, or internship opportunities. Let's connect!">Terbuka untuk kolaborasi, diskusi proyek, atau peluang magang. Yuk terhubung!</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:shieren.revalina06@gmail.com">
+          <span class="c-icon">✉️</span>
+          <div><strong>Email</strong><p>shieren.revalina06@gmail.com</p></div>
+        </a>
+        <a class="contact-card" href="tel:+6281513163008">
+          <span class="c-icon">📞</span>
+          <div><strong data-id="Telepon" data-en="Phone">Telepon</strong><p>+62 815-1316-3008</p></div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/shieren-revalina-129391294/" target="_blank" rel="noopener">
+          <span class="c-icon">💼</span>
+          <div><strong>LinkedIn</strong><p>linkedin.com/in/shieren-revalina</p></div>
+        </a>
+        <a class="contact-card" href="https://github.com/shierenrevalina" target="_blank" rel="noopener">
+          <span class="c-icon">🐙</span>
+          <div><strong>GitHub</strong><p>github.com/shierenrevalina</p></div>
+        </a>
+      </div>
+
+      <footer class="main-footer">
+        <p>&copy; <span id="year"></span> Shieren Revalina Jesslyn.
+        </p>
+      </footer>
+    </section>
+  </main>
+
+  <a href="#beranda" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
