@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Partikel latar (full page) -->
+  <canvas class="bg-particles" id="bgParticles" aria-hidden="true"></canvas>
+
+  <!-- Progress scroll -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
   <!-- ===== Sidebar ===== -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-top">
@@ -55,8 +61,13 @@
   <main class="main">
     <!-- Beranda -->
     <section class="hero" id="beranda">
+      <div class="hero-aurora" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
       <span class="kicker" data-id="👋 Selamat datang di portofolio saya" data-en="👋 Welcome to my portfolio">👋 Selamat datang di portofolio saya</span>
-      <h2 class="hero-title">
+      <h2 class="hero-title" id="heroTitle">
         <span data-id="Halo, saya" data-en="Hi, I'm">Halo, saya</span>
         <span class="grad">Shieren Revalina Jesslyn</span>
       </h2>
@@ -77,10 +88,9 @@
       <div class="about-layout">
         <p class="about-p" data-id="Saya mahasiswa Computer Science dengan peminatan Data Analyst. Saya terbiasa mengumpulkan, membersihkan, dan menganalisis data, lalu menyajikannya dalam bentuk visualisasi dan laporan yang mudah dipahami. Saya menguasai SQL dan Python (pandas, NumPy) untuk analisis, serta terbiasa membuat dashboard menggunakan Excel, Tableau, atau Power BI. Saya berpikir analitis, teliti pada detail, dan senang menerjemahkan data menjadi rekomendasi yang berdampak bagi bisnis." data-en="I'm a Computer Science student specializing in Data Analytics. I'm experienced in collecting, cleaning, and analyzing data, then presenting it through clear visualizations and reports. I work with SQL and Python (pandas, NumPy) for analysis, and I'm comfortable building dashboards with Excel, Tableau, or Power BI. I'm analytical, detail-oriented, and enjoy translating data into recommendations that create real business impact.">Saya mahasiswa Computer Science dengan peminatan Data Analyst. Saya terbiasa mengumpulkan, membersihkan, dan menganalisis data, lalu menyajikannya dalam bentuk visualisasi dan laporan yang mudah dipahami. Saya menguasai SQL dan Python (pandas, NumPy) untuk analisis, serta terbiasa membuat dashboard menggunakan Excel, Tableau, atau Power BI. Saya berpikir analitis, teliti pada detail, dan senang menerjemahkan data menjadi rekomendasi yang berdampak bagi bisnis.</p>
         <div class="facts">
-          <div class="fact"><strong>3+</strong><span data-id="Proyek" data-en="Projects">Proyek</span></div>
-          <div class="fact"><strong>3</strong><span data-id="Paper" data-en="Papers">Paper</span></div>
-          <div class="fact"><strong>1</strong><span data-id="Sertifikat" data-en="Certificates">Sertifikat</span></div>
-          <div class="fact"><strong>3.00</strong><span data-id="IPK / Nilai" data-en="GPA / Grade">IPK / Nilai</span></div>
+          <div class="fact"><strong data-count="3" data-suffix="+">0</strong><span data-id="Proyek" data-en="Projects">Proyek</span></div>
+          <div class="fact"><strong data-count="3">0</strong><span data-id="Paper" data-en="Papers">Paper</span></div>
+          <div class="fact"><strong data-count="1">0</strong><span data-id="Sertifikat" data-en="Certificates">Sertifikat</span></div>
         </div>
       </div>
     </section>
